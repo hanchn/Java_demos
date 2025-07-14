@@ -100,9 +100,14 @@
   - 抽象类基础
 
 #### 2.4 多态
-- [ ] 多态基础概念 (`PolymorphismBasicsDemo.java`)
-- [ ] 运行时多态 (`RuntimePolymorphismDemo.java`)
-- [ ] instanceof操作符 (`InstanceofDemo.java`)
+- [x] 多态综合示例 (`PolymorphismDemo.java`) ✅
+  - 多态基础概念和实现原理
+  - 方法重写和动态绑定
+  - 向上转型和向下转型
+  - instanceof操作符使用
+  - 抽象类中的多态
+  - 接口中的多态
+  - 多态的实际应用场景
 
 #### 2.5 抽象类与接口
 - [ ] 抽象类 (`AbstractClassDemo.java`)
@@ -389,7 +394,7 @@ mvn compile exec:java -Dexec.mainClass="com.example.javademos.basic.BasicExample
 # 使用Maven编译并运行所有OOP示例
 mvn compile exec:java -Dexec.mainClass="com.example.javademos.oop.OOPExamplesRunner"
 
-# 运行特定示例（1-3对应不同示例，4运行所有）
+# 运行特定示例（1-4对应不同示例，5运行所有）
 mvn compile exec:java -Dexec.mainClass="com.example.javademos.oop.OOPExamplesRunner" -Dexec.args="1"
 ```
 
@@ -429,7 +434,8 @@ java -cp target/classes com.example.javademos.oop.ClassAndObjectDemo
 - **选项1**: 类和对象示例 (`ClassAndObjectDemo.java`)
 - **选项2**: 封装示例 (`EncapsulationDemo.java`)
 - **选项3**: 继承示例 (`InheritanceDemo.java`)
-- **选项4**: 运行所有示例（默认选项）
+- **选项4**: 多态示例 (`PolymorphismDemo.java`)
+- **选项5**: 运行所有示例（默认选项）
 
 ### Spring Boot应用（后续开发）
 
@@ -468,7 +474,8 @@ Java_demos/
 │   │   ├── OOPExamplesRunner.java         # OOP示例运行器
 │   │   ├── ClassAndObjectDemo.java        # 类和对象示例
 │   │   ├── EncapsulationDemo.java         # 封装示例
-│   │   └── InheritanceDemo.java           # 继承示例
+│   │   ├── InheritanceDemo.java           # 继承示例
+│   │   └── PolymorphismDemo.java          # 多态示例
 │   └── controller/                        # Spring Boot控制器
 │       └── HelloController.java           # 示例控制器
 ├── src/main/resources/

@@ -13,7 +13,8 @@ package com.example.javademos.oop;
  * 1 - 类和对象示例
  * 2 - 封装示例
  * 3 - 继承示例
- * 4 - 运行所有示例（默认）
+ * 4 - 多态示例
+ * 5 - 运行所有示例（默认）
  */
 public class OOPExamplesRunner {
     
@@ -21,14 +22,14 @@ public class OOPExamplesRunner {
         System.out.println("=== Java面向对象编程示例 ===");
         System.out.println();
         
-        int choice = 4; // 默认运行所有示例
+        int choice = 5; // 默认运行所有示例
         
         if (args.length > 0) {
             try {
                 choice = Integer.parseInt(args[0]);
             } catch (NumberFormatException e) {
                 System.out.println("无效的参数，将运行所有示例");
-                choice = 4;
+                choice = 5;
             }
         }
         
@@ -43,6 +44,9 @@ public class OOPExamplesRunner {
                 runInheritanceDemo();
                 break;
             case 4:
+                runPolymorphismDemo();
+                break;
+            case 5:
             default:
                 runAllExamples();
                 break;
@@ -70,17 +74,24 @@ public class OOPExamplesRunner {
         InheritanceDemo.main(new String[]{});
     }
     
+    private static void runPolymorphismDemo() {
+        System.out.println("\n>>> 运行多态示例 <<<");
+        System.out.println("=".repeat(50));
+        PolymorphismDemo.main(new String[]{});
+    }
+    
     private static void runAllExamples() {
         System.out.println("运行所有面向对象编程示例...");
         
         runClassAndObjectDemo();
         runEncapsulationDemo();
         runInheritanceDemo();
+        runPolymorphismDemo();
         
         System.out.println();
         System.out.println("提示：");
-        System.out.println("- 可以使用参数 1-3 来运行特定示例");
+        System.out.println("- 可以使用参数 1-4 来运行特定示例");
         System.out.println("- 例如：java OOPExamplesRunner 1 (运行类和对象示例)");
-        System.out.println("- 建议按顺序学习：类和对象 -> 封装 -> 继承");
+        System.out.println("- 建议按顺序学习：类和对象 -> 封装 -> 继承 -> 多态");
     }
 }
