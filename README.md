@@ -4,41 +4,71 @@
 
 ## 📚 示例大纲
 
-### 第一部分：Java基础语法 (basics)
+### 第一部分：Java基础语法 (basic)
 
-#### 1.1 数据类型与变量
-- [ ] 基本数据类型示例 (`DataTypesDemo.java`)
-- [ ] 变量声明与初始化 (`VariablesDemo.java`)
-- [ ] 类型转换示例 (`TypeConversionDemo.java`)
-- [ ] 常量定义与使用 (`ConstantsDemo.java`)
+#### 1.1 基本数据类型与变量
+- [x] 基本数据类型示例 (`BasicDataTypes.java`) ✅
+  - 8种基本数据类型：byte, short, int, long, float, double, char, boolean
+  - 数据类型范围和默认值
+  - 类型转换（自动转换和强制转换）
+  - 常量定义和使用
+- [x] 变量声明与作用域 (`VariableDeclaration.java`) ✅
+  - 类变量、实例变量、局部变量
+  - 变量命名规范
+  - 变量初始化和默认值
+  - 变量作用域演示
 
 #### 1.2 运算符
-- [ ] 算术运算符 (`ArithmeticOperatorsDemo.java`)
-- [ ] 比较运算符 (`ComparisonOperatorsDemo.java`)
-- [ ] 逻辑运算符 (`LogicalOperatorsDemo.java`)
-- [ ] 位运算符 (`BitwiseOperatorsDemo.java`)
-- [ ] 三元运算符 (`TernaryOperatorDemo.java`)
+- [x] 运算符综合示例 (`OperatorExamples.java`) ✅
+  - 算术运算符 (+, -, *, /, %)
+  - 关系运算符 (==, !=, >, <, >=, <=)
+  - 逻辑运算符 (&&, ||, !)
+  - 位运算符 (&, |, ^, ~, <<, >>, >>>)
+  - 赋值运算符 (=, +=, -=, *=, /=, %=)
+  - 一元运算符 (++, --, +, -)
+  - 三元运算符 (? :)
+  - 运算符优先级演示
 
 #### 1.3 控制流程
-- [ ] if-else条件语句 (`ConditionalStatementsDemo.java`)
-- [ ] switch语句 (`SwitchStatementDemo.java`)
-- [ ] for循环 (`ForLoopDemo.java`)
-- [ ] while循环 (`WhileLoopDemo.java`)
-- [ ] do-while循环 (`DoWhileLoopDemo.java`)
-- [ ] break和continue (`BreakContinueDemo.java`)
+- [x] 控制流综合示例 (`ControlFlowExamples.java`) ✅
+  - 条件语句：if, if-else, if-else if-else, 嵌套if
+  - switch语句：传统switch, switch表达式, 字符串switch, 枚举switch
+  - 循环语句：for, 增强for, while, do-while, 无限循环, 嵌套循环
+  - 跳转语句：break, continue, 标签break/continue, return
+  - 实际应用：菜单驱动程序、数据验证、搜索排序算法
 
-#### 1.4 数组
-- [ ] 一维数组 (`OneDimensionalArrayDemo.java`)
-- [ ] 多维数组 (`MultiDimensionalArrayDemo.java`)
-- [ ] 数组操作方法 (`ArrayOperationsDemo.java`)
-- [ ] 数组排序与搜索 (`ArraySortSearchDemo.java`)
+#### 1.4 数组操作
+- [x] 数组操作综合示例 (`ArrayOperations.java`) ✅
+  - 一维数组：声明、初始化、访问、遍历
+  - 多维数组：二维数组、三维数组、锯齿数组
+  - 数组工具方法：复制、排序、搜索、填充、比较
+  - 数组作为方法参数和返回值
+  - 可变参数（varargs）
+  - 数组注意事项：引用类型、长度不可变、默认值
 
-#### 1.5 方法
-- [ ] 方法定义与调用 (`MethodBasicsDemo.java`)
-- [ ] 方法参数传递 (`MethodParametersDemo.java`)
-- [ ] 方法重载 (`MethodOverloadingDemo.java`)
-- [ ] 递归方法 (`RecursionDemo.java`)
-- [ ] 可变参数 (`VarArgsDemo.java`)
+#### 1.5 方法定义与使用
+- [x] 方法综合示例 (`MethodExamples.java`) ✅
+  - 方法定义和调用
+  - 参数传递：值传递 vs 引用传递
+  - 方法重载：按参数数量、类型、顺序重载
+  - 可变参数方法
+  - 递归方法：阶乘、斐波那契、数字求和、字符串反转、二分查找、汉诺塔
+  - 静态方法 vs 实例方法
+  - 访问修饰符：public, private, protected, 包私有
+  - 实用工具方法
+
+#### 1.6 字符串操作
+- [x] 字符串操作综合示例 (`StringOperations.java`) ✅
+  - 字符串创建：字面量、new关键字、字符数组、字节数组
+  - 字符串比较：==, equals(), equalsIgnoreCase(), compareTo()
+  - 字符串查找：indexOf(), lastIndexOf(), contains(), startsWith(), endsWith()
+  - 字符串操作：substring(), split(), replace(), trim(), toUpperCase(), toLowerCase()
+  - 字符串格式化：printf(), String.format(), MessageFormat
+  - StringBuilder和StringBuffer使用
+  - 字符串转换：基本类型转换、进制转换、字符数组转换
+  - 正则表达式：Pattern, Matcher, 常用正则模式
+  - 字符串工具方法：连接、验证、截断、填充
+  - 性能考虑和最佳实践
 
 ### 第二部分：面向对象编程 (oop)
 
@@ -324,6 +354,54 @@
 
 ## 🚀 快速开始
 
+### 环境要求
+- Java 17 或更高版本
+- Maven 3.6 或更高版本
+- IDE（推荐 IntelliJ IDEA 或 Eclipse）
+
+### 运行基础语法示例
+
+#### 方式一：使用BasicExamplesRunner（推荐）
+```bash
+# 进入项目目录
+cd Java_demos
+
+# 使用Maven编译并运行所有基础示例
+mvn compile exec:java -Dexec.mainClass="com.example.javademos.BasicExamplesRunner"
+
+# 运行特定示例（1-7对应不同示例，8运行所有）
+mvn compile exec:java -Dexec.mainClass="com.example.javademos.BasicExamplesRunner" -Dexec.args="1"
+```
+
+#### 方式二：直接编译运行
+```bash
+# 编译所有Java文件
+javac -d target/classes src/main/java/com/example/javademos/*.java
+
+# 运行BasicExamplesRunner
+java -cp target/classes com.example.javademos.BasicExamplesRunner
+
+# 或运行单个示例
+java -cp target/classes com.example.javademos.BasicDataTypes
+```
+
+#### 方式三：使用IDE
+1. 在IDE中打开项目
+2. 运行 `BasicExamplesRunner.java` 查看所有示例
+3. 或直接运行单个示例文件
+
+#### 示例选项说明
+- **选项1**: 基本数据类型示例 (`BasicDataTypes.java`)
+- **选项2**: 变量声明示例 (`VariableDeclaration.java`)
+- **选项3**: 数组操作示例 (`ArrayOperations.java`)
+- **选项4**: 运算符示例 (`OperatorExamples.java`)
+- **选项5**: 控制流示例 (`ControlFlowExamples.java`)
+- **选项6**: 方法示例 (`MethodExamples.java`)
+- **选项7**: 字符串操作示例 (`StringOperations.java`)
+- **选项8**: 运行所有示例（默认选项）
+
+### Spring Boot应用（后续开发）
+
 1. 克隆项目：
    ```bash
    git clone <repository-url>
@@ -339,6 +417,26 @@
    - 主页：http://localhost:8080
    - API文档：http://localhost:8080/api/info
    - H2数据库控制台：http://localhost:8080/h2-console
+
+## 📁 项目结构
+
+```
+Java_demos/
+├── src/main/java/com/example/javademos/
+│   ├── JavaDemosApplication.java          # Spring Boot主启动类
+│   ├── BasicExamplesRunner.java           # 基础示例运行器
+│   ├── BasicDataTypes.java                # 基本数据类型示例
+│   ├── VariableDeclaration.java           # 变量声明示例
+│   ├── ArrayOperations.java               # 数组操作示例
+│   ├── OperatorExamples.java              # 运算符示例
+│   ├── ControlFlowExamples.java           # 控制流示例
+│   ├── MethodExamples.java                # 方法示例
+│   └── StringOperations.java              # 字符串操作示例
+├── src/main/resources/
+│   └── application.properties             # Spring Boot配置
+├── pom.xml                                # Maven配置文件
+└── README.md                              # 项目说明文档
+```
 
 ## 📝 学习建议
 
