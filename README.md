@@ -455,14 +455,22 @@ java -cp target/classes com.example.javademos.oop.ClassAndObjectDemo
 Java_demos/
 ├── src/main/java/com/example/javademos/
 │   ├── JavaDemosApplication.java          # Spring Boot主启动类
-│   ├── BasicExamplesRunner.java           # 基础示例运行器
-│   ├── BasicDataTypes.java                # 基本数据类型示例
-│   ├── VariableDeclaration.java           # 变量声明示例
-│   ├── ArrayOperations.java               # 数组操作示例
-│   ├── OperatorExamples.java              # 运算符示例
-│   ├── ControlFlowExamples.java           # 控制流示例
-│   ├── MethodExamples.java                # 方法示例
-│   └── StringOperations.java              # 字符串操作示例
+│   ├── basic/                             # 基础语法示例
+│   │   ├── BasicExamplesRunner.java       # 基础示例运行器
+│   │   ├── BasicDataTypes.java            # 基本数据类型示例
+│   │   ├── VariableDeclaration.java       # 变量声明示例
+│   │   ├── ArrayOperations.java           # 数组操作示例
+│   │   ├── OperatorExamples.java          # 运算符示例
+│   │   ├── ControlFlowExamples.java       # 控制流示例
+│   │   ├── MethodExamples.java            # 方法示例
+│   │   └── StringOperations.java          # 字符串操作示例
+│   ├── oop/                               # 面向对象编程示例
+│   │   ├── OOPExamplesRunner.java         # OOP示例运行器
+│   │   ├── ClassAndObjectDemo.java        # 类和对象示例
+│   │   ├── EncapsulationDemo.java         # 封装示例
+│   │   └── InheritanceDemo.java           # 继承示例
+│   └── controller/                        # Spring Boot控制器
+│       └── HelloController.java           # 示例控制器
 ├── src/main/resources/
 │   └── application.properties             # Spring Boot配置
 ├── pom.xml                                # Maven配置文件
