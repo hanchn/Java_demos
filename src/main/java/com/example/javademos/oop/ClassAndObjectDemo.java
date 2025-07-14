@@ -311,18 +311,18 @@ class Student {
 /**
  * Employee类 - 演示this关键字的多种用法
  */
-class Employee {
+class BasicEmployee {
     private String name;
     private int age;
     private String employeeId;
 
     // 默认构造方法
-    public Employee() {
+    public BasicEmployee() {
         this("未知员工", 0, "未分配");
     }
 
     // 完整构造方法
-    public Employee(String name, int age, String employeeId) {
+    public BasicEmployee(String name, int age, String employeeId) {
         // 使用this区分参数和成员变量
         this.name = name;
         this.age = age;
@@ -347,17 +347,17 @@ class Employee {
     }
 
     // 链式调用方法（返回this）
-    public Employee setName(String name) {
+    public BasicEmployee setName(String name) {
         this.name = name;
         return this; // 返回当前对象，支持链式调用
     }
 
-    public Employee setAge(int age) {
+    public BasicEmployee setAge(int age) {
         this.age = age;
         return this;
     }
 
-    public Employee setEmployeeId(String employeeId) {
+    public BasicEmployee setEmployeeId(String employeeId) {
         this.employeeId = employeeId;
         return this;
     }
