@@ -396,21 +396,26 @@ mvn compile exec:java -Dexec.mainClass="com.example.javademos.oop.OOPExamplesRun
 #### 方式二：直接编译运行
 ```bash
 # 编译所有Java文件
-javac -d target/classes src/main/java/com/example/javademos/*.java
+javac -d target/classes src/main/java/com/example/javademos/*/*.java
 
 # 运行BasicExamplesRunner
-java -cp target/classes com.example.javademos.BasicExamplesRunner
+java -cp target/classes com.example.javademos.basic.BasicExamplesRunner
+
+# 运行OOPExamplesRunner
+java -cp target/classes com.example.javademos.oop.OOPExamplesRunner
 
 # 或运行单个示例
-java -cp target/classes com.example.javademos.BasicDataTypes
+java -cp target/classes com.example.javademos.basic.BasicDataTypes
+java -cp target/classes com.example.javademos.oop.ClassAndObjectDemo
 ```
 
 #### 方式三：使用IDE
 1. 在IDE中打开项目
-2. 运行 `BasicExamplesRunner.java` 查看所有示例
-3. 或直接运行单个示例文件
+2. 运行 `basic/BasicExamplesRunner.java` 查看所有基础语法示例
+3. 运行 `oop/OOPExamplesRunner.java` 查看所有面向对象编程示例
+4. 或直接运行单个示例文件
 
-#### 示例选项说明
+#### 基础语法示例选项说明
 - **选项1**: 基本数据类型示例 (`BasicDataTypes.java`)
 - **选项2**: 变量声明示例 (`VariableDeclaration.java`)
 - **选项3**: 数组操作示例 (`ArrayOperations.java`)
@@ -419,6 +424,12 @@ java -cp target/classes com.example.javademos.BasicDataTypes
 - **选项6**: 方法示例 (`MethodExamples.java`)
 - **选项7**: 字符串操作示例 (`StringOperations.java`)
 - **选项8**: 运行所有示例（默认选项）
+
+#### 面向对象编程示例选项说明
+- **选项1**: 类和对象示例 (`ClassAndObjectDemo.java`)
+- **选项2**: 封装示例 (`EncapsulationDemo.java`)
+- **选项3**: 继承示例 (`InheritanceDemo.java`)
+- **选项4**: 运行所有示例（默认选项）
 
 ### Spring Boot应用（后续开发）
 
