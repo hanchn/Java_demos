@@ -49,13 +49,13 @@ public class ClassAndObjectDemo {
     private static void demonstrateClassDefinition() {
         System.out.println("\n--- 1. 类的定义和对象创建 ---");
 
-        // 创建Person对象
-        Person person1 = new Person();
-        System.out.println("创建默认Person对象: " + person1.getInfo());
+        // 创建BasicPerson对象
+        BasicPerson person1 = new BasicPerson();
+        System.out.println("创建默认BasicPerson对象: " + person1.getInfo());
 
         // 使用有参构造器创建对象
-        Person person2 = new Person("张三", 25);
-        System.out.println("创建指定信息的Person对象: " + person2.getInfo());
+        BasicPerson person2 = new BasicPerson("张三", 25);
+        System.out.println("创建指定信息的BasicPerson对象: " + person2.getInfo());
 
         // 修改对象属性
         person1.setName("李四");
@@ -93,8 +93,8 @@ public class ClassAndObjectDemo {
     private static void demonstrateThisKeyword() {
         System.out.println("\n--- 3. this关键字演示 ---");
 
-        // 创建Employee对象演示this的使用
-        Employee emp = new Employee("张经理", 35, "E001");
+        // 创建BasicEmployee对象演示this的使用
+        BasicEmployee emp = new BasicEmployee("张经理", 35, "E001");
         System.out.println("员工信息: " + emp.getEmployeeInfo());
 
         // 演示this在方法中的使用
@@ -102,7 +102,7 @@ public class ClassAndObjectDemo {
         System.out.println("更新后信息: " + emp.getEmployeeInfo());
 
         // 演示方法链调用
-        Employee emp2 = new Employee()
+        BasicEmployee emp2 = new BasicEmployee()
                 .setName("王主管")
                 .setAge(32)
                 .setEmployeeId("E002");
@@ -115,8 +115,8 @@ public class ClassAndObjectDemo {
     private static void demonstrateMembersAndMethods() {
         System.out.println("\n--- 4. 成员变量和方法演示 ---");
 
-        // 创建Car对象演示成员变量和方法
-        Car car = new Car("丰田", "凯美瑞", 2023);
+        // 创建BasicCar对象演示成员变量和方法
+        BasicCar car = new BasicCar("丰田", "凯美瑞", 2023);
         System.out.println("汽车信息: " + car.getCarInfo());
 
         // 调用成员方法
@@ -221,23 +221,23 @@ public class ClassAndObjectDemo {
 /**
  * Person类 - 演示基本的类定义
  */
-class Person {
+class BasicPerson {
     // 成员变量（实例变量）
     private String name;
     private int age;
 
     // 默认构造方法
-    public Person() {
+    public BasicPerson() {
         this.name = "未知";
         this.age = 0;
-        System.out.println("Person默认构造方法被调用");
+        System.out.println("BasicPerson默认构造方法被调用");
     }
 
     // 有参构造方法
-    public Person(String name, int age) {
+    public BasicPerson(String name, int age) {
         this.name = name;
         this.age = age;
-        System.out.println("Person有参构造方法被调用: " + name + ", " + age);
+        System.out.println("BasicPerson有参构造方法被调用: " + name + ", " + age);
     }
 
     // getter方法
@@ -370,7 +370,7 @@ class BasicEmployee {
 /**
  * Car类 - 演示成员变量和方法的访问控制
  */
-class Car {
+class BasicCar {
     // 不同访问修饰符的成员变量
     public String brand; // 公共成员
     protected String model; // 受保护成员
@@ -382,7 +382,7 @@ class Car {
     private int speed = 0;
 
     // 构造方法
-    public Car(String brand, String model, int year) {
+    public BasicCar(String brand, String model, int year) {
         this.brand = brand;
         this.model = model;
         this.year = year;

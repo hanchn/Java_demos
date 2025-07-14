@@ -268,7 +268,7 @@ class AccessModifierExample {
 /**
  * Person类 - 演示标准的getter/setter模式
  */
-class Person {
+class EncapPerson {
     // 私有字段
     private String name;
     private int age;
@@ -276,14 +276,14 @@ class Person {
     private double salary;
 
     // 构造方法
-    public Person() {
+    public EncapPerson() {
         this.name = "";
         this.age = 0;
         this.email = "";
         this.salary = 0.0;
     }
 
-    public Person(String name, int age, String email, double salary) {
+    public EncapPerson(String name, int age, String email, double salary) {
         setName(name);
         setAge(age);
         setEmail(email);
