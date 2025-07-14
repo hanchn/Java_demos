@@ -228,22 +228,22 @@ public class PolymorphismDemo {
         System.out.println("\n--- 7. 多态数组演示 ---");
         
         // 创建多态数组
-        Vehicle[] vehicles = {
-            new Car("奔驰", 4),
-            new Motorcycle("哈雷", 2),
-            new Truck("解放", 6, 10.0)
+        PolyVehicle[] vehicles = {
+            new PolyCar("奔驰", 4),
+            new PolyMotorcycle("哈雷", 2),
+            new PolyTruck("解放", 6, 10.0)
         };
         
         System.out.println("车辆信息和操作:");
-        for (Vehicle vehicle : vehicles) {
+        for (PolyVehicle vehicle : vehicles) {
             System.out.println("\n" + vehicle.getInfo());
             vehicle.start();
             vehicle.accelerate();
             vehicle.stop();
             
             // 根据具体类型执行特定操作
-            if (vehicle instanceof Truck) {
-                Truck truck = (Truck) vehicle;
+            if (vehicle instanceof PolyTruck) {
+                PolyTruck truck = (PolyTruck) vehicle;
                 truck.loadCargo();
             }
         }
@@ -580,11 +580,11 @@ class PolyAirplane implements PolyFlyable {
 /**
  * 车辆基类
  */
-abstract class Vehicle {
+abstract class PolyVehicle {
     protected String brand;
     protected int wheels;
     
-    public Vehicle(String brand, int wheels) {
+    public PolyVehicle(String brand, int wheels) {
         this.brand = brand;
         this.wheels = wheels;
     }
@@ -601,9 +601,9 @@ abstract class Vehicle {
 /**
  * 汽车类
  */
-class Car extends Vehicle {
+class PolyCar extends PolyVehicle {
     
-    public Car(String brand, int wheels) {
+    public PolyCar(String brand, int wheels) {
         super(brand, wheels);
     }
     
@@ -626,9 +626,9 @@ class Car extends Vehicle {
 /**
  * 摩托车类
  */
-class Motorcycle extends Vehicle {
+class PolyMotorcycle extends PolyVehicle {
     
-    public Motorcycle(String brand, int wheels) {
+    public PolyMotorcycle(String brand, int wheels) {
         super(brand, wheels);
     }
     
@@ -651,10 +651,10 @@ class Motorcycle extends Vehicle {
 /**
  * 卡车类
  */
-class Truck extends Vehicle {
+class PolyTruck extends PolyVehicle {
     private double cargoCapacity;
     
-    public Truck(String brand, int wheels, double cargoCapacity) {
+    public PolyTruck(String brand, int wheels, double cargoCapacity) {
         super(brand, wheels);
         this.cargoCapacity = cargoCapacity;
     }
