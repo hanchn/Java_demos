@@ -1,295 +1,366 @@
-# Java Demos
+# Java 代码示例大全
 
-这是一个Java示例项目集合，包含各种Java编程示例和演示代码。
+这是一个系统化的Java学习示例项目，包含从基础到高级的各种代码示例，帮助开发者逐步掌握Java编程技能。
 
-## 项目结构
+## 📚 示例大纲
 
-```
-Java_demos/
-├── src/
-│   ├── main/
-│   │   └── java/
-│   └── test/
-│       └── java/
-├── lib/
-├── docs/
-├── .gitignore
-└── README.md
-```
+### 第一部分：Java基础语法 (basics)
 
-## 环境要求
+#### 1.1 数据类型与变量
+- [ ] 基本数据类型示例 (`DataTypesDemo.java`)
+- [ ] 变量声明与初始化 (`VariablesDemo.java`)
+- [ ] 类型转换示例 (`TypeConversionDemo.java`)
+- [ ] 常量定义与使用 (`ConstantsDemo.java`)
 
-- Java 8 或更高版本
-- Maven 3.6+ 或 Gradle 6.0+（如果使用构建工具）
+#### 1.2 运算符
+- [ ] 算术运算符 (`ArithmeticOperatorsDemo.java`)
+- [ ] 比较运算符 (`ComparisonOperatorsDemo.java`)
+- [ ] 逻辑运算符 (`LogicalOperatorsDemo.java`)
+- [ ] 位运算符 (`BitwiseOperatorsDemo.java`)
+- [ ] 三元运算符 (`TernaryOperatorDemo.java`)
 
-## 快速开始
+#### 1.3 控制流程
+- [ ] if-else条件语句 (`ConditionalStatementsDemo.java`)
+- [ ] switch语句 (`SwitchStatementDemo.java`)
+- [ ] for循环 (`ForLoopDemo.java`)
+- [ ] while循环 (`WhileLoopDemo.java`)
+- [ ] do-while循环 (`DoWhileLoopDemo.java`)
+- [ ] break和continue (`BreakContinueDemo.java`)
 
-### 编译和运行
+#### 1.4 数组
+- [ ] 一维数组 (`OneDimensionalArrayDemo.java`)
+- [ ] 多维数组 (`MultiDimensionalArrayDemo.java`)
+- [ ] 数组操作方法 (`ArrayOperationsDemo.java`)
+- [ ] 数组排序与搜索 (`ArraySortSearchDemo.java`)
 
-1. 克隆项目到本地：
+#### 1.5 方法
+- [ ] 方法定义与调用 (`MethodBasicsDemo.java`)
+- [ ] 方法参数传递 (`MethodParametersDemo.java`)
+- [ ] 方法重载 (`MethodOverloadingDemo.java`)
+- [ ] 递归方法 (`RecursionDemo.java`)
+- [ ] 可变参数 (`VarArgsDemo.java`)
+
+### 第二部分：面向对象编程 (oop)
+
+#### 2.1 类与对象
+- [ ] 类的定义 (`ClassDefinitionDemo.java`)
+- [ ] 对象创建与使用 (`ObjectCreationDemo.java`)
+- [ ] 构造方法 (`ConstructorDemo.java`)
+- [ ] this关键字 (`ThisKeywordDemo.java`)
+- [ ] 成员变量与方法 (`MemberVariablesMethodsDemo.java`)
+
+#### 2.2 封装
+- [ ] 访问修饰符 (`AccessModifiersDemo.java`)
+- [ ] getter和setter方法 (`GetterSetterDemo.java`)
+- [ ] 数据隐藏示例 (`DataHidingDemo.java`)
+
+#### 2.3 继承
+- [ ] 类继承基础 (`InheritanceBasicsDemo.java`)
+- [ ] super关键字 (`SuperKeywordDemo.java`)
+- [ ] 方法重写 (`MethodOverridingDemo.java`)
+- [ ] 继承中的构造方法 (`InheritanceConstructorDemo.java`)
+
+#### 2.4 多态
+- [ ] 多态基础概念 (`PolymorphismBasicsDemo.java`)
+- [ ] 运行时多态 (`RuntimePolymorphismDemo.java`)
+- [ ] instanceof操作符 (`InstanceofDemo.java`)
+
+#### 2.5 抽象类与接口
+- [ ] 抽象类 (`AbstractClassDemo.java`)
+- [ ] 接口定义与实现 (`InterfaceDemo.java`)
+- [ ] 接口多继承 (`MultipleInheritanceDemo.java`)
+- [ ] 默认方法与静态方法 (`DefaultStaticMethodsDemo.java`)
+
+### 第三部分：Java核心类库 (core)
+
+#### 3.1 String类
+- [ ] String基本操作 (`StringBasicsDemo.java`)
+- [ ] String方法详解 (`StringMethodsDemo.java`)
+- [ ] StringBuilder和StringBuffer (`StringBuilderBufferDemo.java`)
+- [ ] 字符串格式化 (`StringFormattingDemo.java`)
+- [ ] 正则表达式 (`RegexDemo.java`)
+
+#### 3.2 包装类
+- [ ] 基本类型包装类 (`WrapperClassesDemo.java`)
+- [ ] 自动装箱拆箱 (`AutoboxingUnboxingDemo.java`)
+- [ ] 数值转换 (`NumberConversionDemo.java`)
+
+#### 3.3 日期时间API
+- [ ] Date类使用 (`DateDemo.java`)
+- [ ] Calendar类 (`CalendarDemo.java`)
+- [ ] Java 8时间API (`LocalDateTimeDemo.java`)
+- [ ] 时间格式化 (`DateFormattingDemo.java`)
+
+#### 3.4 Math类
+- [ ] 数学运算方法 (`MathOperationsDemo.java`)
+- [ ] 随机数生成 (`RandomNumberDemo.java`)
+- [ ] 数学常量 (`MathConstantsDemo.java`)
+
+### 第四部分：集合框架 (collections)
+
+#### 4.1 List集合
+- [ ] ArrayList使用 (`ArrayListDemo.java`)
+- [ ] LinkedList使用 (`LinkedListDemo.java`)
+- [ ] Vector使用 (`VectorDemo.java`)
+- [ ] List性能比较 (`ListPerformanceDemo.java`)
+
+#### 4.2 Set集合
+- [ ] HashSet使用 (`HashSetDemo.java`)
+- [ ] LinkedHashSet使用 (`LinkedHashSetDemo.java`)
+- [ ] TreeSet使用 (`TreeSetDemo.java`)
+- [ ] Set操作示例 (`SetOperationsDemo.java`)
+
+#### 4.3 Map集合
+- [ ] HashMap使用 (`HashMapDemo.java`)
+- [ ] LinkedHashMap使用 (`LinkedHashMapDemo.java`)
+- [ ] TreeMap使用 (`TreeMapDemo.java`)
+- [ ] Properties使用 (`PropertiesDemo.java`)
+
+#### 4.4 集合工具类
+- [ ] Collections工具类 (`CollectionsUtilDemo.java`)
+- [ ] Arrays工具类 (`ArraysUtilDemo.java`)
+- [ ] 集合排序 (`CollectionSortingDemo.java`)
+- [ ] 集合搜索 (`CollectionSearchingDemo.java`)
+
+#### 4.5 泛型
+- [ ] 泛型基础 (`GenericsBasicsDemo.java`)
+- [ ] 泛型类 (`GenericClassDemo.java`)
+- [ ] 泛型方法 (`GenericMethodDemo.java`)
+- [ ] 通配符 (`WildcardsDemo.java`)
+
+### 第五部分：异常处理 (exceptions)
+
+#### 5.1 异常基础
+- [ ] 异常体系结构 (`ExceptionHierarchyDemo.java`)
+- [ ] try-catch语句 (`TryCatchDemo.java`)
+- [ ] finally块 (`FinallyBlockDemo.java`)
+- [ ] 多重catch (`MultipleCatchDemo.java`)
+
+#### 5.2 异常处理进阶
+- [ ] 抛出异常 (`ThrowingExceptionsDemo.java`)
+- [ ] 自定义异常 (`CustomExceptionDemo.java`)
+- [ ] 异常链 (`ExceptionChainingDemo.java`)
+- [ ] try-with-resources (`TryWithResourcesDemo.java`)
+
+### 第六部分：文件I/O操作 (io)
+
+#### 6.1 文件操作
+- [ ] File类使用 (`FileClassDemo.java`)
+- [ ] 文件创建删除 (`FileCreateDeleteDemo.java`)
+- [ ] 目录操作 (`DirectoryOperationsDemo.java`)
+- [ ] 文件属性 (`FileAttributesDemo.java`)
+
+#### 6.2 字节流
+- [ ] FileInputStream/FileOutputStream (`FileByteStreamDemo.java`)
+- [ ] BufferedInputStream/BufferedOutputStream (`BufferedByteStreamDemo.java`)
+- [ ] 对象序列化 (`ObjectSerializationDemo.java`)
+
+#### 6.3 字符流
+- [ ] FileReader/FileWriter (`FileCharStreamDemo.java`)
+- [ ] BufferedReader/BufferedWriter (`BufferedCharStreamDemo.java`)
+- [ ] 字符编码 (`CharacterEncodingDemo.java`)
+
+#### 6.4 NIO
+- [ ] NIO基础 (`NIOBasicsDemo.java`)
+- [ ] Channel和Buffer (`ChannelBufferDemo.java`)
+- [ ] 文件复制 (`FileCopyDemo.java`)
+
+### 第七部分：多线程编程 (multithreading)
+
+#### 7.1 线程基础
+- [ ] 线程创建方式 (`ThreadCreationDemo.java`)
+- [ ] 线程生命周期 (`ThreadLifecycleDemo.java`)
+- [ ] 线程优先级 (`ThreadPriorityDemo.java`)
+- [ ] 守护线程 (`DaemonThreadDemo.java`)
+
+#### 7.2 线程同步
+- [ ] synchronized关键字 (`SynchronizedDemo.java`)
+- [ ] 同步方法 (`SynchronizedMethodDemo.java`)
+- [ ] 同步代码块 (`SynchronizedBlockDemo.java`)
+- [ ] 死锁问题 (`DeadlockDemo.java`)
+
+#### 7.3 线程通信
+- [ ] wait/notify机制 (`WaitNotifyDemo.java`)
+- [ ] 生产者消费者模式 (`ProducerConsumerDemo.java`)
+- [ ] 线程间数据传递 (`ThreadDataSharingDemo.java`)
+
+#### 7.4 并发工具类
+- [ ] Lock接口 (`LockDemo.java`)
+- [ ] ReentrantLock (`ReentrantLockDemo.java`)
+- [ ] CountDownLatch (`CountDownLatchDemo.java`)
+- [ ] CyclicBarrier (`CyclicBarrierDemo.java`)
+- [ ] Semaphore (`SemaphoreDemo.java`)
+
+#### 7.5 线程池
+- [ ] Executor框架 (`ExecutorDemo.java`)
+- [ ] ThreadPoolExecutor (`ThreadPoolExecutorDemo.java`)
+- [ ] ScheduledExecutorService (`ScheduledExecutorDemo.java`)
+- [ ] Future和Callable (`FutureCallableDemo.java`)
+
+### 第八部分：网络编程 (networking)
+
+#### 8.1 网络基础
+- [ ] InetAddress类 (`InetAddressDemo.java`)
+- [ ] URL和URI (`URLURIDemo.java`)
+- [ ] 网络协议基础 (`NetworkProtocolsDemo.java`)
+
+#### 8.2 Socket编程
+- [ ] TCP客户端 (`TCPClientDemo.java`)
+- [ ] TCP服务器 (`TCPServerDemo.java`)
+- [ ] UDP通信 (`UDPDemo.java`)
+- [ ] 多客户端服务器 (`MultiClientServerDemo.java`)
+
+#### 8.3 HTTP编程
+- [ ] HTTP客户端 (`HTTPClientDemo.java`)
+- [ ] RESTful API调用 (`RESTfulAPIDemo.java`)
+- [ ] JSON数据处理 (`JSONProcessingDemo.java`)
+
+### 第九部分：反射与注解 (reflection)
+
+#### 9.1 反射机制
+- [ ] Class类使用 (`ClassDemo.java`)
+- [ ] 获取类信息 (`ClassInfoDemo.java`)
+- [ ] 动态创建对象 (`DynamicObjectCreationDemo.java`)
+- [ ] 调用方法 (`MethodInvocationDemo.java`)
+- [ ] 访问字段 (`FieldAccessDemo.java`)
+
+#### 9.2 注解
+- [ ] 内置注解 (`BuiltInAnnotationsDemo.java`)
+- [ ] 自定义注解 (`CustomAnnotationDemo.java`)
+- [ ] 注解处理器 (`AnnotationProcessorDemo.java`)
+- [ ] 运行时注解 (`RuntimeAnnotationDemo.java`)
+
+#### 9.3 动态代理
+- [ ] JDK动态代理 (`JDKProxyDemo.java`)
+- [ ] CGLIB代理 (`CGLIBProxyDemo.java`)
+- [ ] 代理模式应用 (`ProxyPatternDemo.java`)
+
+### 第十部分：函数式编程 (functional)
+
+#### 10.1 Lambda表达式
+- [ ] Lambda基础语法 (`LambdaBasicsDemo.java`)
+- [ ] 函数式接口 (`FunctionalInterfaceDemo.java`)
+- [ ] 方法引用 (`MethodReferenceDemo.java`)
+- [ ] 构造器引用 (`ConstructorReferenceDemo.java`)
+
+#### 10.2 Stream API
+- [ ] Stream创建 (`StreamCreationDemo.java`)
+- [ ] 中间操作 (`StreamIntermediateOpsDemo.java`)
+- [ ] 终端操作 (`StreamTerminalOpsDemo.java`)
+- [ ] 并行流 (`ParallelStreamDemo.java`)
+- [ ] 收集器 (`CollectorsDemo.java`)
+
+#### 10.3 Optional类
+- [ ] Optional基础 (`OptionalBasicsDemo.java`)
+- [ ] Optional操作方法 (`OptionalOperationsDemo.java`)
+- [ ] 避免空指针 (`NullPointerAvoidanceDemo.java`)
+
+### 第十一部分：设计模式 (patterns)
+
+#### 11.1 创建型模式
+- [ ] 单例模式 (`SingletonPatternDemo.java`)
+- [ ] 工厂方法模式 (`FactoryMethodPatternDemo.java`)
+- [ ] 抽象工厂模式 (`AbstractFactoryPatternDemo.java`)
+- [ ] 建造者模式 (`BuilderPatternDemo.java`)
+- [ ] 原型模式 (`PrototypePatternDemo.java`)
+
+#### 11.2 结构型模式
+- [ ] 适配器模式 (`AdapterPatternDemo.java`)
+- [ ] 装饰器模式 (`DecoratorPatternDemo.java`)
+- [ ] 外观模式 (`FacadePatternDemo.java`)
+- [ ] 代理模式 (`ProxyPatternDemo.java`)
+- [ ] 组合模式 (`CompositePatternDemo.java`)
+
+#### 11.3 行为型模式
+- [ ] 观察者模式 (`ObserverPatternDemo.java`)
+- [ ] 策略模式 (`StrategyPatternDemo.java`)
+- [ ] 命令模式 (`CommandPatternDemo.java`)
+- [ ] 模板方法模式 (`TemplateMethodPatternDemo.java`)
+- [ ] 状态模式 (`StatePatternDemo.java`)
+
+### 第十二部分：Spring Boot应用 (springboot)
+
+#### 12.1 Web开发
+- [ ] REST API开发 (`RestAPIDemo.java`)
+- [ ] 请求参数处理 (`RequestParametersDemo.java`)
+- [ ] 响应数据格式 (`ResponseFormatsDemo.java`)
+- [ ] 异常处理 (`ExceptionHandlingDemo.java`)
+
+#### 12.2 数据访问
+- [ ] JPA实体类 (`JPAEntityDemo.java`)
+- [ ] Repository接口 (`RepositoryDemo.java`)
+- [ ] 数据库操作 (`DatabaseOperationsDemo.java`)
+- [ ] 事务管理 (`TransactionDemo.java`)
+
+#### 12.3 配置管理
+- [ ] 配置文件使用 (`ConfigurationDemo.java`)
+- [ ] 环境配置 (`ProfilesDemo.java`)
+- [ ] 自定义配置 (`CustomConfigDemo.java`)
+
+#### 12.4 测试
+- [ ] 单元测试 (`UnitTestDemo.java`)
+- [ ] 集成测试 (`IntegrationTestDemo.java`)
+- [ ] Mock测试 (`MockTestDemo.java`)
+
+### 第十三部分：实战项目 (projects)
+
+#### 13.1 控制台应用
+- [ ] 学生管理系统 (`StudentManagementSystem.java`)
+- [ ] 图书管理系统 (`LibraryManagementSystem.java`)
+- [ ] 银行账户系统 (`BankAccountSystem.java`)
+- [ ] 计算器应用 (`CalculatorApp.java`)
+
+#### 13.2 Web应用
+- [ ] 博客系统 (`BlogSystem/`)
+- [ ] 在线商城 (`OnlineShop/`)
+- [ ] 任务管理系统 (`TaskManagementSystem/`)
+- [ ] 聊天室应用 (`ChatRoomApp/`)
+
+#### 13.3 工具类项目
+- [ ] 文件处理工具 (`FileUtilityTool.java`)
+- [ ] 数据转换工具 (`DataConversionTool.java`)
+- [ ] 网络爬虫 (`WebCrawler.java`)
+- [ ] 日志分析工具 (`LogAnalyzer.java`)
+
+## 🚀 快速开始
+
+1. 克隆项目：
    ```bash
    git clone <repository-url>
    cd Java_demos
    ```
 
-2. 编译Java文件：
+2. 启动Spring Boot应用：
    ```bash
-   javac -d bin src/main/java/**/*.java
+   mvn spring-boot:run
    ```
 
-3. 运行示例：
-   ```bash
-   java -cp bin <MainClassName>
-   ```
+3. 访问应用：
+   - 主页：http://localhost:8080
+   - API文档：http://localhost:8080/api/info
+   - H2数据库控制台：http://localhost:8080/h2-console
 
-### 使用Maven（可选）
+## 📝 学习建议
 
-如果项目包含`pom.xml`文件：
+1. **按顺序学习**：建议按照大纲顺序逐步学习，每个示例都有详细注释
+2. **动手实践**：每个示例都可以独立运行，建议亲自编写和调试
+3. **理解原理**：不仅要会用，更要理解背后的原理和最佳实践
+4. **项目实战**：完成基础学习后，尝试实战项目来巩固知识
+5. **持续更新**：Java技术在不断发展，保持学习新特性的习惯
 
-```bash
-# 编译项目
-mvn compile
+## 🤝 贡献指南
 
-# 运行测试
-mvn test
+欢迎提交新的示例代码或改进现有示例：
 
-# 打包项目
-mvn package
-```
+1. Fork本项目
+2. 创建特性分支
+3. 提交代码（确保有详细注释）
+4. 发起Pull Request
 
-### 使用Gradle（可选）
+## 📄 许可证
 
-如果项目包含`build.gradle`文件：
-
-```bash
-# 编译项目
-./gradlew build
-
-# 运行测试
-./gradlew test
-
-# 运行应用
-./gradlew run
-```
-
-## Java学习路径
-
-### 🎯 学习路线图
-
-本项目为Java学习者提供了一个系统化的学习路径，从零基础到高级应用，帮助你逐步掌握Java编程技能。
-
-#### 第一阶段：Java基础 (1-2个月)
-
-**学习目标**：掌握Java基本语法和编程思维
-
-- **环境搭建**
-  - JDK安装与配置
-  - IDE选择（IntelliJ IDEA/Eclipse）
-  - 第一个Hello World程序
-
-- **基础语法**
-  - 变量与数据类型
-  - 运算符与表达式
-  - 控制流程（if-else, switch, 循环）
-  - 数组的使用
-
-- **方法与函数**
-  - 方法定义与调用
-  - 参数传递
-  - 方法重载
-  - 递归思想
-
-**实践项目**：计算器、简单游戏（猜数字）、学生成绩管理
-
-#### 第二阶段：面向对象编程 (2-3个月)
-
-**学习目标**：理解OOP思想，掌握类与对象
-
-- **类与对象**
-  - 类的定义与实例化
-  - 构造方法
-  - 成员变量与方法
-  - this关键字
-
-- **封装、继承、多态**
-  - 访问修饰符
-  - 继承与super关键字
-  - 方法重写
-  - 抽象类与接口
-  - 多态的实现
-
-- **常用类库**
-  - String类详解
-  - 包装类
-  - Math类
-  - 日期时间API
-
-**实践项目**：图书管理系统、银行账户管理、动物园管理系统
-
-#### 第三阶段：核心API与集合框架 (2-3个月)
-
-**学习目标**：掌握Java核心类库和集合操作
-
-- **异常处理**
-  - 异常体系结构
-  - try-catch-finally
-  - 自定义异常
-  - 异常处理最佳实践
-
-- **集合框架**
-  - List（ArrayList, LinkedList）
-  - Set（HashSet, TreeSet）
-  - Map（HashMap, TreeMap）
-  - 集合遍历与操作
-  - 泛型的使用
-
-- **文件I/O操作**
-  - 文件读写
-  - 字节流与字符流
-  - 缓冲流
-  - 序列化
-
-**实践项目**：文件管理器、日志系统、数据持久化应用
-
-#### 第四阶段：高级特性 (2-3个月)
-
-**学习目标**：掌握Java高级编程技术
-
-- **多线程编程**
-  - 线程创建与管理
-  - 线程同步（synchronized, Lock）
-  - 线程池
-  - 并发集合
-
-- **网络编程**
-  - Socket编程
-  - HTTP客户端
-  - 网络协议基础
-
-- **反射与注解**
-  - 反射机制
-  - 动态代理
-  - 自定义注解
-
-- **Lambda表达式与Stream API**
-  - 函数式编程思想
-  - Lambda语法
-  - Stream操作
-
-**实践项目**：多线程下载器、简单Web服务器、聊天室应用
-
-#### 第五阶段：框架与工具 (3-4个月)
-
-**学习目标**：掌握主流开发框架和工具
-
-- **构建工具**
-  - Maven项目管理
-  - Gradle构建工具
-  - 依赖管理
-
-- **数据库操作**
-  - JDBC基础
-  - 连接池
-  - MyBatis/Hibernate ORM
-
-- **Web开发**
-  - Servlet与JSP
-  - Spring Framework
-  - Spring Boot
-  - RESTful API设计
-
-- **测试**
-  - JUnit单元测试
-  - Mockito模拟测试
-  - 集成测试
-
-**实践项目**：博客系统、电商网站、RESTful API服务
-
-#### 第六阶段：企业级开发 (持续学习)
-
-**学习目标**：掌握企业级开发技能
-
-- **微服务架构**
-  - Spring Cloud
-  - 服务注册与发现
-  - 配置中心
-  - 网关
-
-- **消息队列**
-  - RabbitMQ
-  - Apache Kafka
-  - 异步处理
-
-- **缓存技术**
-  - Redis
-  - 缓存策略
-  - 分布式缓存
-
-- **性能优化**
-  - JVM调优
-  - 代码优化
-  - 数据库优化
-
-**实践项目**：分布式系统、高并发应用、企业级项目
-
-### 📚 推荐学习资源
-
-#### 书籍推荐
-- 《Java核心技术》- Cay S. Horstmann
-- 《Effective Java》- Joshua Bloch
-- 《Java并发编程实战》- Brian Goetz
-- 《Spring实战》- Craig Walls
-
-#### 在线资源
-- [Oracle官方Java文档](https://docs.oracle.com/javase/)
-- [菜鸟教程Java](https://www.runoob.com/java/)
-- [廖雪峰Java教程](https://www.liaoxuefeng.com/wiki/1252599548343744)
-
-#### 练习平台
-- [LeetCode](https://leetcode.cn/) - 算法练习
-- [牛客网](https://www.nowcoder.com/) - 编程练习
-- [GitHub](https://github.com/) - 开源项目学习
-
-### 💡 学习建议
-
-1. **循序渐进**：按照学习路径逐步推进，不要跳跃式学习
-2. **多动手练习**：理论结合实践，每个知识点都要编写代码验证
-3. **项目驱动**：通过实际项目来巩固所学知识
-4. **阅读源码**：学习优秀开源项目的代码实现
-5. **持续学习**：技术更新快，保持学习的习惯
-
-## 示例内容
-
-本项目包含以下类型的Java示例，对应上述学习路径的各个阶段：
-
-- **基础语法示例** - 对应第一阶段
-- **面向对象编程** - 对应第二阶段
-- **集合框架使用** - 对应第三阶段
-- **多线程编程** - 对应第四阶段
-- **文件I/O操作** - 对应第三阶段
-- **网络编程** - 对应第四阶段
-- **设计模式实现** - 对应第四、五阶段
-- **框架应用示例** - 对应第五、六阶段
-
-## 贡献指南
-
-1. Fork 本项目
-2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 开启 Pull Request
-
-## 许可证
-
-本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。
-
-## 联系方式
-
-如有问题或建议，请通过以下方式联系：
-
-- 邮箱：your.email@example.com
-- GitHub Issues：[项目Issues页面](https://github.com/username/Java_demos/issues)
+本项目采用MIT许可证，详见LICENSE文件。
 
 ---
 
-**注意**：请确保在运行示例代码前已正确配置Java开发环境。
+**开始你的Java学习之旅吧！** 🎯
