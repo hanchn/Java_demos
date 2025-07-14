@@ -155,14 +155,15 @@ public class ClassAndObjectDemo {
         Counter.resetCount();
         System.out.println("重置后的计数器: " + Counter.getCount());
 
-        // 演示静态代码块
+        // 演示静态代码块和静态方法
         System.out.println("\n静态代码块演示:");
-        MathUtils utils = new MathUtils(); // 触发静态代码块执行
-
-        // 使用静态方法
+        // 访问静态成员会触发静态代码块执行
         System.out.println("圆周率: " + MathUtils.PI);
         System.out.println("5的平方: " + MathUtils.square(5));
         System.out.println("3和4的最大值: " + MathUtils.max(3, 4));
+        
+        // 注意：MathUtils是工具类，构造方法是私有的，不能实例化
+        System.out.println("MathUtils是工具类，只能通过类名直接调用静态方法");
     }
 
     /**
