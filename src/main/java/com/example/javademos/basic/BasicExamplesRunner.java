@@ -1,13 +1,11 @@
 package com.example.javademos.basic;
 
-import com.example.javademos.basic.*;
-
 /**
  * 基础示例运行器
  * 用于运行所有基本数据类型和语法示例
  * 
  * @author Java学习示例
- * @version 1.0
+ * @version 1..0
  */
 public class BasicExamplesRunner {
 
