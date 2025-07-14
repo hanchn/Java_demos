@@ -1,4 +1,4 @@
-package com.example.javademos;
+package com.example.javademos.basic;
 
 import com.example.javademos.basic.*;
 
@@ -10,7 +10,7 @@ import com.example.javademos.basic.*;
  * @version 1.0
  */
 public class BasicExamplesRunner {
-    
+
     public static void main(String[] args) {
         System.out.println("=== Java基础示例运行器 ===");
         System.out.println("选择要运行的示例:");
@@ -23,7 +23,7 @@ public class BasicExamplesRunner {
         System.out.println("7. 字符串操作 (StringOperations)");
         System.out.println("8. 运行所有示例");
         System.out.println();
-        
+
         // 如果没有命令行参数，默认运行所有示例
         if (args.length == 0) {
             System.out.println("没有指定参数，运行所有示例...");
@@ -33,94 +33,94 @@ public class BasicExamplesRunner {
             runSpecificExample(choice);
         }
     }
-    
+
     /**
      * 运行所有示例
      */
     private static void runAllExamples() {
         System.out.println("\n🚀 开始运行所有基础示例...\n");
-        
+
         try {
             System.out.println("\n" + "=".repeat(50));
             System.out.println("运行示例 1: 基本数据类型");
             System.out.println("=".repeat(50));
-            BasicDataTypes.main(new String[]{});
-            
+            BasicDataTypes.main(new String[] {});
+
             System.out.println("\n" + "=".repeat(50));
             System.out.println("运行示例 2: 变量声明");
             System.out.println("=".repeat(50));
-            VariableDeclaration.main(new String[]{});
-            
+            VariableDeclaration.main(new String[] {});
+
             System.out.println("\n" + "=".repeat(50));
             System.out.println("运行示例 3: 数组操作");
             System.out.println("=".repeat(50));
-            ArrayOperations.main(new String[]{});
-            
+            ArrayOperations.main(new String[] {});
+
             System.out.println("\n" + "=".repeat(50));
             System.out.println("运行示例 4: 操作符示例");
             System.out.println("=".repeat(50));
-            OperatorExamples.main(new String[]{});
-            
+            OperatorExamples.main(new String[] {});
+
             System.out.println("\n" + "=".repeat(50));
             System.out.println("运行示例 5: 控制流");
             System.out.println("=".repeat(50));
-            ControlFlowExamples.main(new String[]{});
-            
+            ControlFlowExamples.main(new String[] {});
+
             System.out.println("\n" + "=".repeat(50));
             System.out.println("运行示例 6: 方法示例");
             System.out.println("=".repeat(50));
-            MethodExamples.main(new String[]{});
-            
+            MethodExamples.main(new String[] {});
+
             System.out.println("\n" + "=".repeat(50));
             System.out.println("运行示例 7: 字符串操作");
             System.out.println("=".repeat(50));
-            StringOperations.main(new String[]{});
-            
+            StringOperations.main(new String[] {});
+
             System.out.println("\n" + "=".repeat(50));
             System.out.println("✅ 所有示例运行完成!");
             System.out.println("=".repeat(50));
-            
+
         } catch (Exception e) {
             System.err.println("❌ 运行示例时出错: " + e.getMessage());
             e.printStackTrace();
         }
     }
-    
+
     /**
      * 运行指定的示例
      */
     private static void runSpecificExample(String choice) {
         System.out.println("\n🎯 运行指定示例: " + choice + "\n");
-        
+
         try {
             switch (choice) {
                 case "1":
                     System.out.println("运行: 基本数据类型示例");
-                    BasicDataTypes.main(new String[]{});
+                    BasicDataTypes.main(new String[] {});
                     break;
                 case "2":
                     System.out.println("运行: 变量声明示例");
-                    VariableDeclaration.main(new String[]{});
+                    VariableDeclaration.main(new String[] {});
                     break;
                 case "3":
                     System.out.println("运行: 数组操作示例");
-                    ArrayOperations.main(new String[]{});
+                    ArrayOperations.main(new String[] {});
                     break;
                 case "4":
                     System.out.println("运行: 操作符示例");
-                    OperatorExamples.main(new String[]{});
+                    OperatorExamples.main(new String[] {});
                     break;
                 case "5":
                     System.out.println("运行: 控制流示例");
-                    ControlFlowExamples.main(new String[]{});
+                    ControlFlowExamples.main(new String[] {});
                     break;
                 case "6":
                     System.out.println("运行: 方法示例");
-                    MethodExamples.main(new String[]{});
+                    MethodExamples.main(new String[] {});
                     break;
                 case "7":
                     System.out.println("运行: 字符串操作示例");
-                    StringOperations.main(new String[]{});
+                    StringOperations.main(new String[] {});
                     break;
                 case "8":
                     runAllExamples();
@@ -135,7 +135,7 @@ public class BasicExamplesRunner {
             e.printStackTrace();
         }
     }
-    
+
     /**
      * 打印使用说明
      */
