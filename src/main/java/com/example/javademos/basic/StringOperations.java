@@ -492,7 +492,7 @@ public class StringOperations {
         String joined = joinStrings(words, ", ");
         System.out.println("连接字符串: " + joined);
         
-        String html = buildHtmlTable(new String[][]{{
+        String html = buildHtmlTable(new String[][]{
             {"姓名", "年龄", "城市"},
             {"张三", "25", "北京"},
             {"李四", "30", "上海"}

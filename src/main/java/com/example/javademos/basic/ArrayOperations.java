@@ -440,9 +440,9 @@ public class ArrayOperations {
     }
 
     /**
-     * 计算数组和
+     * 计算数组和（重载方法，接受数组参数）
      */
-    private static int calculateSum(int[] array) {
+    private static int calculateSumArray(int[] array) {
         int sum = 0;
         for (int value : array) {
             sum += value;
@@ -456,6 +456,6 @@ public class ArrayOperations {
     private static double calculateAverage(int[] array) {
         if (array.length == 0)
             return 0;
-        return (double) calculateSum(array) / array.length;
+        return (double) calculateSumArray(array) / array.length;
     }
 }
