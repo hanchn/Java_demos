@@ -73,22 +73,31 @@
 ### 第二部分：面向对象编程 (oop)
 
 #### 2.1 类与对象
-- [ ] 类的定义 (`ClassDefinitionDemo.java`)
-- [ ] 对象创建与使用 (`ObjectCreationDemo.java`)
-- [ ] 构造方法 (`ConstructorDemo.java`)
-- [ ] this关键字 (`ThisKeywordDemo.java`)
-- [ ] 成员变量与方法 (`MemberVariablesMethodsDemo.java`)
+- [x] 类和对象综合示例 (`ClassAndObjectDemo.java`) ✅
+  - 类的定义和对象创建
+  - 构造方法和方法重载
+  - this关键字的使用
+  - 成员变量和方法
+  - 静态成员和静态方法
+  - 对象生命周期演示
 
 #### 2.2 封装
-- [ ] 访问修饰符 (`AccessModifiersDemo.java`)
-- [ ] getter和setter方法 (`GetterSetterDemo.java`)
-- [ ] 数据隐藏示例 (`DataHidingDemo.java`)
+- [x] 封装综合示例 (`EncapsulationDemo.java`) ✅
+  - 访问修饰符详解
+  - getter和setter方法
+  - 数据隐藏和验证
+  - 不可变类设计
+  - 属性访问控制
 
 #### 2.3 继承
-- [ ] 类继承基础 (`InheritanceBasicsDemo.java`)
-- [ ] super关键字 (`SuperKeywordDemo.java`)
-- [ ] 方法重写 (`MethodOverridingDemo.java`)
-- [ ] 继承中的构造方法 (`InheritanceConstructorDemo.java`)
+- [x] 继承综合示例 (`InheritanceDemo.java`) ✅
+  - 类继承基础
+  - super关键字使用
+  - 方法重写
+  - 构造方法链
+  - 访问修饰符在继承中的作用
+  - final关键字
+  - 抽象类基础
 
 #### 2.4 多态
 - [ ] 多态基础概念 (`PolymorphismBasicsDemo.java`)
@@ -367,10 +376,21 @@
 cd Java_demos
 
 # 使用Maven编译并运行所有基础示例
-mvn compile exec:java -Dexec.mainClass="com.example.javademos.BasicExamplesRunner"
+mvn compile exec:java -Dexec.mainClass="com.example.javademos.basic.BasicExamplesRunner"
 
 # 运行特定示例（1-7对应不同示例，8运行所有）
-mvn compile exec:java -Dexec.mainClass="com.example.javademos.BasicExamplesRunner" -Dexec.args="1"
+mvn compile exec:java -Dexec.mainClass="com.example.javademos.basic.BasicExamplesRunner" -Dexec.args="1"
+```
+
+### 运行面向对象编程示例
+
+#### 方式一：使用OOPExamplesRunner（推荐）
+```bash
+# 使用Maven编译并运行所有OOP示例
+mvn compile exec:java -Dexec.mainClass="com.example.javademos.oop.OOPExamplesRunner"
+
+# 运行特定示例（1-3对应不同示例，4运行所有）
+mvn compile exec:java -Dexec.mainClass="com.example.javademos.oop.OOPExamplesRunner" -Dexec.args="1"
 ```
 
 #### 方式二：直接编译运行
